@@ -9,7 +9,7 @@ Just a blog about Arrowverse
 Use 'Gobuster' to discover hidden directories and files on a web server. 
 When you visit a website normally, you only see pages that are linked in the UI, but many servers contain unlisted or hidden paths
 
-Next step, try to check for a hidden directory using: 'gobuster dir --url 10.48.144.254 --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt'
+Next step, try to check for a hidden directory using: `gobuster dir --url 10.48.144.254 --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt`
 <img width="748" height="437" alt="Screenshot 2026-05-02 113236" src="https://github.com/user-attachments/assets/b54806f2-48f8-4101-9512-1a347d417c27" />
 
 Use `Inspect Element` by pressing F12 to see if there's any hidden Text
@@ -27,7 +27,7 @@ The other method from `Inspect Element` is `View Page Source`
 <img width="875" height="568" alt="Screenshot 2026-05-02 113634" src="https://github.com/user-attachments/assets/5c0d1fd2-92e2-4b89-b886-65ae5f4070f0" />
 
 <img width="728" height="416" alt="Screenshot 2026-05-02 113642" src="https://github.com/user-attachments/assets/b3c19fb9-00ca-4870-9f3d-87039183caf1" />
-It shows there's nothing inside the page but it shows ".ticket."
+It shows there's nothing inside the page but it shows `.ticket.`
 
 Try ``gobuster dir --url 10.48.144.254/island/2100 --wordlist /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x.ticket``
 why -x .ticket?
